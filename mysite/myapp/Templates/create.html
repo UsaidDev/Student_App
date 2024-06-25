@@ -1,0 +1,25 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'css/createPage.css' %}">
+    <title>Create</title>
+</head>
+<body>
+    <div class="create-page">
+        <h2>Add Students Data's</h2>
+        <form method="post" enctype="multipart/form-data">
+            {% csrf_token %}
+            <input type="text" name="Roll" placeholder="Roll">
+            <input type="text" name="Name" placeholder="Name">
+            <input type="text" name="Class" placeholder="Class">
+            <input type="text" name="Subject" placeholder="Subject">
+            <input type="file" name="Student_photo" id="">
+            <input type="submit" value="Submit">
+            <a href="{% url 'home' %}">Back to Home</a>
+        </form>
+    </div>
+</body>
+</html>

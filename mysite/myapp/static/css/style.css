@@ -1,0 +1,31 @@
+table{
+    margin: auto;
+    text-align: center;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    height: auto;
+    width: 400px;
+}
+table th{
+    color: red;
+}
+.container{
+    height: 100px;
+    position: relative;
+    width: 100px;
+    margin: auto;
+}
+.btn-wrapper{
+    margin: auto;
+    position: absolute;
+    top: 30%;
+    -ms-transform: translateY(-50%);
+    transform:translateY(-50%);
+}
+.create-btn{
+    text-decoration: none;
+    background-color: greenyellow;
+    padding: 10px;
+    border-radius: 10px;
+    color: black;
+    cursor: pointer;
+}
